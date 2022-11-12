@@ -77,6 +77,7 @@
     height: 20px;
     position: relative;
     cursor: pointer;
+    display: none;
 }
 
 .burgerLineUp,
@@ -130,7 +131,9 @@
 }
 
 @media(max-width: 1200px) {
-
+    .burger{
+    display: block;
+    }
     .header,
     .menu {
         background: #FFFFFF;
