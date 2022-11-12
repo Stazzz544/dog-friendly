@@ -1,13 +1,162 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*------reset styles start-------*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/*------reset styles end-------*/
+
+
+/* fonts */
+
+
+@font-face {
+	font-family: "Open Sans";
+	font-display: swap;
+	src: url("./fonts/OpenSans-Regular.woff") format("woff"), url("./fonts/OpenSans-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: Regular;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	font-display: swap;
+	src: url("./fonts/OpenSans-Medium.woff") format("woff"), url("./fonts/OpenSans-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: Medium;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	font-display: swap;
+	src: url("./fonts/OpenSans-SemiBold.woff") format("woff"), url("./fonts/OpenSans-SemiBold.woff2") format("woff2");
+	font-weight: 600;
+	font-style: Semi Bold;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	font-display: swap;
+	src: url("./fonts/OpenSans-Bold.woff") format("woff"), url("./fonts/OpenSans-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: Bold;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	font-display: swap;
+	src: url("./fonts/OpenSans-ExtraBold.woff") format("woff"), url("./fonts/OpenSans-ExtraBold.woff2") format("woff2");
+	font-weight: 800;
+	font-style: Semi Bold;
+}
+
+/* global styles */
+
+body {
+    font-family: "Open Sans", sans-serif;;
+    background: #F3F9FF;
+    color: #313140;
+    font-weight: 400;
+}
+
+input {
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 8px 14px;
+    width: 100%;
+    max-width: 232.5px;
+}
+
+input::placeholder {
+    color: #A1A1A1;
+
+}
+
+button {
+    background: none;
 }

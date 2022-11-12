@@ -1,0 +1,165 @@
+.mainWrapper {
+    padding: 16px;
+    background: #FFFFFF;
+    border: 1px solid #3D95FB;
+    box-shadow: 0px 2px 8px rgba(15, 85, 126, 0.04), 4px 4px 16px rgba(18, 102, 152, 0.08);
+    border-radius: 8px;
+    min-width: 400px;
+}
+
+.tourType {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 8px;
+    background: #F3F9FF;
+    border-radius: 4px;
+}
+
+.tourTypeDiscription {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.tourTypeSvg {
+    margin-left: 8px;
+}
+
+.tourTypeAmount {
+    margin-left: 2px;
+    color: #3D95FB;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.tourTitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 16px;
+}
+
+.aboutTour {
+    margin-top: 20px;
+    display: flex;
+    row-gap: 12px;
+    font-size: 16px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.coupleGroups{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 12px;
+}
+
+.groupElem {
+    display: flex;
+    align-items: center
+}
+
+.aboutTourDiscr {
+    margin-left: 8px;
+}
+
+.day {
+    font-weight: 600;
+}
+
+.dash {
+    position: relative;
+    top: -2px;
+}
+
+.promocode {
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #3D95FB;
+    cursor: pointer;
+}
+
+.divider {
+    height: 1px;
+    background-color: #D8EAFE;
+    margin-top: 16px;
+}
+
+.priceWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.priceText {
+    color: #A1A1A1;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.priceFlex {
+    display: flex;
+    column-gap: 3px;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.currency {
+    fill: #313140;
+    height: 11.5px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.currencyTotal{
+    height: 14.28px;
+}
+
+.multiplicator {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.ditails {
+    margin-top: 10px;
+}
+
+.priceWrapperTotal {
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.priceTextTotal {
+    color: #A1A1A1;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.priceTotalFlexWrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.totalPrice {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@media(max-width: 768px) {
+    .mainWrapper{
+        min-width: auto;
+    }
+    .aboutTour{
+    font-size: 12px;    
+    }
+}

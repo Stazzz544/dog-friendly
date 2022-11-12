@@ -1,0 +1,199 @@
+.supportMainWrapper {
+    margin-top: 78px;
+    background: radial-gradient(85.62% 123.5% at 16.99% 100%, rgba(0, 195, 255, 0.2) 0%, rgba(243, 249, 255, 0) 100%), radial-gradient(90.83% 141.65% at 88.14% 9.17%, rgba(91, 194, 0, 0.16) 0%, rgba(243, 249, 255, 0) 100%), #F3F9FF;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.supportWrapper {
+    margin-top: 36px;
+    margin-left: 104px;
+    z-index: 2;
+}
+
+.supportTitle {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.supportSubtitle {
+    margin-top: 7px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.supportFiled {
+    margin-top: 24px;
+    display: flex;
+}
+
+.phoneWrapper {
+    position: relative;
+    max-width: 330px;
+    flex: 1 1;
+}
+
+.phoneField {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 26px 29px 10px 20px;
+    border: none;
+    max-width: 330px;
+}
+
+.phoneLabel {
+    font-size: 12px;
+    line-height: 16px;
+    color: #A1A1A1;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+
+.callMeBtn {
+    background: #FFCA00;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    transform: translateX(-9px);
+    width: 183px;
+    transition: all 0.3s;
+}
+
+.callMeBtn:disabled {
+    background: #FFF6D4;
+    color: #CACBCE;
+}
+
+.agreementLink {}
+
+.agreementText {
+    max-width: 469px;
+    margin-left: 35px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #313140;
+    margin-bottom: 36px;
+}
+
+.agreementLink {
+    font-size: 12px;
+    line-height: 16px;
+    color: #3D95FB;
+}
+
+.agreementWrapper {
+    margin-top: 16px;
+}
+
+.imgWrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+.imgWrapper img {
+    height: 100%;
+}
+
+@media(max-width: 1200px) {
+    .supportSubtitle {
+        max-width: 424px;
+    }
+
+    .supportWrapper {
+        margin-top: 32px;
+        margin-left: 32px;
+    }
+
+    .supportTitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .imgWrapper {
+        position: absolute;
+        right: -50px;
+        top: 40px;
+        height: 87%;
+        z-index: 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .supportTitle {
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .supportSubtitle {
+        text-align: center;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .supportSubtitle {
+        max-width: 100%;
+    }
+
+    .supportMainWrapper {
+        display: block;
+    }
+
+    .supportWrapper {
+        margin: 0;
+        padding: 114px 12px 32px 12px;
+    }
+
+    .imgWrapper {
+        right: 50%;
+        transform: translateX(50%);
+        top: -18px;
+        height: 32%;
+    }
+
+    .supportMainWrapper {
+        overflow: visible;
+    }
+
+    .supportFiled {
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+
+    .phoneWrapper,
+    .phoneField {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .phoneField {
+        min-width: 250px;
+    }
+
+    .callMeBtn {
+        height: 52px;
+        width: 100%;
+        transform: translateX(0px);
+    }
+    .agreementText{
+         margin-bottom: 0;
+         margin-left: 28px;
+    }
+
+    .checkboxWrapper{
+        transform: translateY(-2px);
+    }
+}

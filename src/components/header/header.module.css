@@ -1,0 +1,155 @@
+.header {
+    position: relative;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.button {
+    background: none;
+    margin-left: 12px;
+}
+
+.phoneWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    z-index: 3;
+    display: flex;
+    row-gap: 24px;
+    flex-direction: column;
+    position: absolute;
+    top: 38px;
+    background: #F3F9FF;
+    padding: 0px 40px 0px 24px;
+    left: -24px;
+    transition: all 0.3s;
+    overflow: hidden;
+    max-height: 1px;
+}
+
+.menu a:last-child {
+    margin-bottom: 20px;
+}
+
+.phone {
+    white-space: nowrap;
+    font-size: 14px;
+    color: #0078BE;
+}
+
+.arrow {
+    position: relative;
+    top: -3px;
+}
+
+.buttonText {
+    color: #F6A81C;
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+.navigation {
+    z-index: 100;
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttonsWrapper {
+    display: flex;
+    column-gap: 60px;
+}
+
+.logoMobile {
+    display: none;
+}
+
+.burger {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.burgerLineUp,
+.burgerLineMiddle,
+.burgerLineBottom {
+    position: absolute;
+    height: 2px;
+    background: #ffffff;
+    width: 18px;
+    border-radius: 15px;
+}
+
+.burgerLineUp {
+    top: 4px;
+    left: 0;
+}
+
+.burgerLineMiddle {
+    top: 9px;
+    left: 0;
+}
+
+.burgerLineBottom {
+    top: 14px;
+    left: 0;
+}
+
+.mobileMenuWrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #FFFFFF;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+    transition: all 1s;
+}
+
+.closeMobileMenu{
+    z-index: 1001;
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    font-size: 30px;
+    color: #0078BE;
+}
+
+@media(max-width: 1200px) {
+
+    .header,
+    .menu {
+        background: #FFFFFF;
+    }
+}
+
+@media(max-width: 768px) {
+    .header {
+        background: #3D95FB;
+        height: 32px;
+        padding: 0 10px;
+    }
+
+    .buttonsWrapper,
+    .logo {
+        display: none;
+    }
+
+    .logoMobile {
+        display: block
+    }
+}

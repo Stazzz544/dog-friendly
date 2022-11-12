@@ -1,0 +1,54 @@
+.form {
+    box-shadow: 0px 2px 8px rgba(15, 85, 126, 0.04), 4px 4px 16px rgba(18, 102, 152, 0.08);
+    border-radius: 8px;
+    background: #FFFFFF;
+    padding: 16px;
+    margin-top: 24px;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.formTitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.formField {
+    min-width: 224px;
+    flex: 1 1;
+    max-width: 100%;
+}
+
+.flexWrapper {
+    margin-top: 12px;
+    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formFieldWide {
+    grid-column: span 3;
+    width: 100%;
+    max-width: 100%;
+}
+
+.formTitleFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 1200px) {
+    .formField {
+        min-width: 200px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .formFieldWide {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .formTitle{
+        font-size: 14px;
+    }
+}

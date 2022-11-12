@@ -1,0 +1,44 @@
+.agreementCheckbox{
+    display: none;
+    position: relative;
+}
+
+.agreementCheckboxLabel{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #3D95FB;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #ffffff    
+}
+
+.agreementCheckboxLabel:has(input:checked) {
+    background: #3D95FB;
+}
+
+.agreementCheckboxLabel:has(input:checked) {
+    background: #3D95FB;
+}
+
+.agreementCheckboxLabel:has(input:checked)::after {
+    content: "";
+    height: 1px;
+    width: 8px;
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    background: #ffffff;
+    transform: rotate(305deg);
+}
+
+.agreementCheckboxLabel:has(input:checked)::before {
+    content: "";
+    height: 1px;
+    width: 4px;
+    position: absolute;
+    top: 7.6px;
+    left: 3px;
+    background: #ffffff;
+    transform: rotate(51deg);
+}

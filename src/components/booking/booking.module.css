@@ -1,0 +1,167 @@
+.mainWrapper {
+    margin-top: 40px;
+    padding: 40px 32px 26px 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(15, 85, 126, 0.04), 4px 4px 16px rgba(18, 102, 152, 0.08);
+    border-radius: 8px;
+}
+
+.clientInfo {
+    /* min-width: 728px;
+    flex: 1 1; */
+}
+
+.title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 42px;
+}
+
+.tourInfo {
+    /* margin-top: 40px; */
+    flex: 1 1;
+}
+
+.formTitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 40px;
+}
+
+.discription {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.paymentWrapper {
+    margin-top: 40px;
+    display: flex;
+}
+
+.countWrapper,
+.bookWrapper {
+    flex: 1 1 50%;
+}
+
+.countText {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.countMoney {
+    color: #3D95FB;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.bookBtn {
+    background: #FFCA00;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 18px 0px;
+    transition: all 0.3s;
+}
+
+.bookBtn:disabled{
+    background: #FFF6D4;
+    color: #CACBCE;
+}
+
+.agreement {
+    margin-top: 10px;
+    display: flex;
+    column-gap: 11px
+}
+
+.agreementText {
+    font-size: 10px;
+    line-height: 12px;
+    margin-left: 24px;
+}
+
+.agreementLink {
+    color: #3D95FB;
+}
+
+.flexWrapper {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.currency {
+    fill: #3D95FB
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    row-gap: 13px;
+}
+
+.helpText {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.helpPhone {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #3D95FB;
+}
+
+@media(max-width: 1200px) {
+    .flexWrapper {
+        flex-wrap: wrap-reverse;
+    }
+
+    .help {
+        flex-direction: row;
+        align-items: center;
+        column-gap: 8px;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 768px) {
+    .mainWrapper {
+        padding: 40px 16px 40px 16px;
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+
+    .paymentWrapper {
+        flex-wrap: wrap;
+    }
+
+    .countWrapper,
+    .bookWrapper {
+        flex: 1 1 auto;
+    }
+
+    .countWrapper p {
+        margin-bottom: 8px;
+    }
+
+    .bookWrapper {
+        margin-top: 15px
+    }
+}
